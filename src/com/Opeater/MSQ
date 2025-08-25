@@ -1,0 +1,439 @@
+
+
+Q1) Find the output of the following program
+
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		for(;false;)
+		System.out.println("Hello World!");
+	}
+}
+
+Q2) What is the return type of a switch expression in new Java version?
+A. Always String
+B. Always void
+C. Can be any type =right
+D. Only int or String
+
+
+Q3) Which keyword is used in new Java switch expression to return a value?
+A. return
+B. break
+C. continue
+D. yield = right
+
+
+Q4) Find the output of the following program
+
+public class Test 
+{
+    public static void main(String[] args) 
+    {
+        byte b = 2;
+        String result = switch (b) 
+	{
+            case 23 -> "Matched 23";
+            case 128 -> "Matched 128";
+            default -> "Not matched";
+        };
+        System.out.println(result);
+    }
+}
+ANS:The bite rang up to -128 to 127 case 128 is out of range.
+
+
+
+Q5) Find the output of the following program
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+        final int a = 1;
+        final int b = 2;  
+
+        int x = 0;
+        String result = switch (x) 
+	{
+            case a -> "Matched a";
+            case b -> "Matched b";
+            default -> "No match";
+        };
+
+        System.out.println(result);
+    }
+}
+ANS: The final is use to gives the cases variale we can use to give the case.
+
+
+
+Q6) Find the output of the following program
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+        int temp = 90;
+
+        String result = switch (temp) 
+        {
+            case 80 -> "80";
+            case 80 -> "90";
+            default -> "default";
+        };
+
+        System.out.println(result);
+    }
+}
+ANS: Duplicate case are not allowed. case 80-case 80
+
+
+Q7) Find the output of the following program
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+        int x = 1;
+
+        
+        String result = switch (x) 
+	{
+            case 1 -> 
+	    {
+                System.out.println("x is one");
+                yield "Matched case 1";
+            }
+            case 2 -> 
+	    {
+                System.out.println("x is two");
+                yield "Matched case 2";
+            }
+            case 3 -> 
+	    {
+                System.out.println("x is two");
+                yield "Matched
+                 case 3";
+            }
+            default -> 
+	    {
+                System.out.println("Unknown value");
+                yield "default";
+            }
+        };
+
+        System.out.println("out of the switch");
+        System.out.println("Result: " + result);
+    }
+}
+
+
+
+Q8) Find the output of the following program
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+        int x = 2;
+
+        String result = switch (x) 
+        {
+            case 2, 4, 6, 8, 10 -> "x is an even number";
+            default -> "value not handled";
+        };
+
+        System.out.println(result);
+    }
+}
+
+ANS:"x is an even number";
+
+Q9) Find the output of the following program.
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+    	int day = 3;
+    	String result = switch(day)
+    	{
+    	    case 1, 2 -> "Weekday";
+    	    case 3, 4, 5 -> "Midweek";
+    	    case 6, 7 -> "Weekend";
+    	    default -> "Invalid";
+    	};
+    	System.out.println(result);
+    }
+}
+ANS:"Midweek";
+
+
+
+Q10) Find the output of the following program
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv)
+    {
+        short x = 200;
+
+        String result = switch (x) 
+        {
+            case 100 -> "One hundred";
+            case 200 -> "Two hundred";
+            case 33000 -> "Thirty three thousand";
+            default -> "Not matched";
+        };
+
+        System.out.println(result);
+    }
+}
+ANS:"Two hundred";
+
+
+
+Q11) Find the output of the following program
+
+public class Test
+{
+      public static void main(String[] argv) 
+      {
+           long  x = 400;
+           switch( x ) 
+	   {
+                  case 100 -> System.out.println("One hundred");
+                  case 200 -> System.out.println("Two hundred");
+                  case 400 -> System.out.println("Three hundred");
+          }
+      }
+}
+ANS: Long,float,double are not valied in java switch.
+
+
+Q12) Find the output of the following program
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+        int j = 4;
+
+        String result = switch (j) 
+        {
+            case 2 -> "value is two";
+            case 2 + 1 -> "value is three";  
+            default -> "value is " + j;
+        };
+
+        System.out.println(result);
+    }
+}
+ANS: The adding i valied in switch the answer is "value is " + j; "value is " + 4;
+
+
+
+Q13) Find the output of the following program
+public class Test
+{
+    public static void main(String[] args) 
+    {
+        for (int i = 0; i <= 3; i++) 
+	{
+            String result = switch (i) 
+	    {
+                case 0 -> "i is 0";
+                case 1 -> "i is 1";
+                case 2 -> "i is 2";
+                default -> "i is greater than 2";
+            };
+            System.out.println(result);
+        }
+    }
+}
+ANS:All are run.
+
+
+Q14) Find the output of the following program
+
+
+package com.ravi.switch_case;
+
+public class Test 
+{
+    public static void main(String[] argv) 
+    {
+    	int score = 85;
+    	String grade = switch (score / 10) 
+    	{
+    	    case 10, 9 -> "A";
+    	    case 8 -> 
+    	    {
+    	        System.out.println("Great job!");
+    	        yield "B";
+    	    }
+    	    case 7 -> "C";
+    	    default -> "F";
+    	};
+    	System.out.println("Grade: " + grade);
+    }
+}
+
+
+Q15) Find the output of the following program
+
+package com.ravi.switch_case;
+public class Test
+{
+    public static void main(String[] argv) 
+    {
+	        String s = "xyz";
+
+	        String result = switch (s.length()) 
+	        {
+	            case 1 -> "length is one";
+	            case 2 -> "length is two";
+	            case 3 -> "length is three";
+	            default -> "no match";
+	        };
+
+	        System.out.println(result);
+    }
+}
+
+===========================================================================================
+Assignment 01 :
+----------------
+Create an Assignment on "Menu-Based Calculator" using New Switch.
+
+Take one java class NumberCalculator which contains main method. 
+
+Create an Object for Scanner class to take two inputs x and y of type integer from Scanner class to perform various operation like Addition, Subtraction, Multiplication and Division using switch case.
+
+From Scanner class take another input "operation" of type String 
+which will accept ADD/SUB/MUL/DIV from the end user.
+
+Write one switch expression to perform all these ADD/SUB/MUL/DIV
+with various cases.
+
+Use new switch case technique, In DIV case, before devision verify
+that the value of y is not zero. If it is zero, provide error message 
+(in red color) [see Test case for Details]
+
+Write default to print an error message that "Invalid Operation"
+
+Test cases :
+------------
+Test case :1
+
+Enter first number : 12
+Enter second number : 14
+Choose operation: ADD / SUB / MUL / DIV
+add
+Result: 26
+
+Test case :2
+-------------
+Enter first number :200
+Enter second number :12
+Choose operation: ADD / SUB / MUL / DIV
+SUB
+Result: 188
+
+Test case :3
+-------------
+Enter first number :12
+Enter second number :2
+Choose operation: ADD / SUB / MUL / DIV
+MUL
+Result: 24
+
+Test case :4
+-------------
+Enter first number :150
+Enter second number :30
+Choose operation: ADD / SUB / MUL / DIV
+DIV
+Result: 5
+
+Test case :5
+-------------
+Enter first number :10
+Enter second number :0
+Choose operation: ADD / SUB / MUL / DIV
+DIV
+Cannot divide by zero
+
+======================================================================
+Assignment 02 :
+---------------
+Create an Assignment on switch case with "grouping and return value"
+
+Take one java class TypeOfDayFinder which contains main method. 
+
+Create an Object for Scanner class to take the input in day in String format.
+
+Pass this day variable data to switch expression to execute the following cases :
+  a) If the given day is MONDAY to FRIDAY , It should return "Weekday" in String format [switch statement must return String type value]
+
+  b) If the given day is SATURDAY to SUNDAY, It should return "Weekend" in String format [switch statement must return String type value]
+
+Write default to print an error message that "Invalid Day"
+
+Print the return String value using S.o.p() statement.
+
+Test Case 1:
+------------
+Enter the day :Monday
+MONDAY is a Weekday
+
+Test Case 2:
+------------
+Enter the day :Tuesday
+TUESDAY is a Weekday
+
+Test case 3:
+-------------
+Enter the day :Wednesday
+WEDNESDAY is a Weekday
+
+Test case 4:
+-------------
+Enter the day :THURSDAY
+THURSDAY is a Weekday
+
+Test case 5:
+-------------
+Enter the day :Friday
+FRIDAY is a Weekday
+
+
+Test case 6:
+-------------
+Enter the day :Saturday
+SATURDAY is a Weekend
+
+Test case 7:
+--------------
+Enter the day :Sunday
+SUNDAY is a Weekend
+
+Test case 8 :
+--------------
+Enter the day :Jan
+JAN is a not a valid Day
+Batch_49_Assignment.txt
+Displaying Batch_49_Assignment.txt.

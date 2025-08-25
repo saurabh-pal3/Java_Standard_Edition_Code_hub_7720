@@ -1,0 +1,46 @@
+Student Name: spal60418@gmail.com
+
+Transaction Id: 112321
+
+Grade: Outstanding
+
+Total Questions: 30
+
+Correct Answers: 27
+
+Attempted: 30
+
+Non-Attempted: 0
+
+Question No	Question Description	Attempted Answer	Result	Status
+1	7. What is a parameterized constructor?	B) A constructor with parameters to initialize instance variables		Attempted
+2	8. Which of the following is a characteristic of constructors?	A) Must have the same name as the class		Attempted
+3	26. Which of the following statements is false about instance variables?	C) They can be accessed without creating an object		Attempted
+4	15. What statement best defines the this keyword in Java?	C) Refers to the current object instance		Attempted
+5	9. What happens if you do not define any constructor in a class?	C) The compiler creates a default constructor (no-arg constructor)		Attempted
+6	10. What is the syntax to call a parameterized constructor when creating an object?	B) ClassName obj = new ClassName(parameters);		Attempted
+7	5. If instance variables and parameters have the same name, what happens if you don’t use this to assign values inside a constructor?	B) The parameters get assigned to themselves, and the instance variables remain uninitialized		Attempted
+8	17. Which of the following is the correct way to declare an instance variable in a class?	A) int x = 0; inside class but outside methods		Attempted
+9	25. If you have a class with instance variables int a, b; and a parameterized constructor ClassName(int a, int b), what is the correct object initialization line?	A) ClassName obj = new ClassName();		Attempted
+10	18. Which constructor will be called by new ClassName(5, "abc");?	B) Parameterized constructor with 2 arguments		Attempted
+11	12. How do you initialize instance variables dynamically during object creation?	C) Using parameterized constructors		Attempted
+12	29. In which scenario would you NOT need to use the this keyword inside a constructor?	B) When instance variable names differ from parameter names		Attempted
+13	4. Why is the this keyword used inside a constructor?	B) To differentiate between instance variables and parameters with the same name		Attempted
+14	23. When a parameterized constructor is used, and instance variables are initialized with parameters, what is the benefit?	C) Each object can have its own initial state		Attempted
+15	21. How do you define a parameterized constructor in Java?	A) By writing a method with the same name but no return type and parameters		Attempted
+16	11. Which is NOT true about instance variables?	A) They are declared inside the class but outside any method		Attempted
+17	20. Which of the following is true about default constructors?	B) They initialize instance variables with default values		Attempted
+18	30. What is the effect of writing this.variable = variable; inside a constructor?	B) Assigns parameter value to the instance variable		Attempted
+19	24. Which keyword is mandatory in constructor definition?	D) None		Attempted
+20	1. What is the main purpose of a constructor in Java?	B) To initialize instance variables		Attempted
+21	3. What keyword is used to refer to the current instance variables inside a constructor?	B) this		Attempted
+22	13. What will be output if the instance variable name is not initialized explicitly and you try to print it?	A) Null for String type		Attempted
+23	28. What happens if you try to write a return statement in a constructor?	A) Compilation error		Attempted
+24	19. What does the following this call inside a constructor do? public ClassName() { this(10); }	A) Calls another constructor with one int parameter		Attempted
+25	2. How many return types does a constructor have?	C) No return type		Attempted
+26	27. How is a constructor different from a method?	B) Constructors have the same name as the class and no return type		Attempted
+27	6. Which of the following is correct to initialize an instance variable age using a parameterized constructor?	B) this.age = age;		Attempted
+28	16. What is the output of the following constructor code? class A { int x; A(int x) { x = x; } }	B) Instance variable x remains default 0		Attempted
+29	14. Can constructors be overloaded?	B) Yes, multiple constructors with different parameters		Attempted
+30	22. What is the output when you do not initialize instance variables explicitly?	B) Initialized with default values (0, null, false) depending on type		Attempted
+Exam Result
